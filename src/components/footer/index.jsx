@@ -1,4 +1,4 @@
-import { FooterContainer } from "./styled"
+import { FooterContainer } from "./styles"
 import ICON_FACEBOOK from '../../assets/svg/icon-facebook.svg';
 import ICON_TWITTER from '../../assets/svg/icon-twitter.svg';
 

@@ -1,4 +1,4 @@
-import { VotingButtonContainer } from "./styled";
+import { VotingButtonContainer } from "./styles";
 import ICON_THUMB from '../../assets/svg/icon-thumb.svg';
 
 const VotingButton = ({type, state}) => {

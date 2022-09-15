@@ -1,5 +1,5 @@
 import ICON_SEARCH from "../../assets/svg/icon-search.svg";
-import { HeaderContainer } from "./styled";
+import { HeaderContainer } from "./styles";
 
 const Header = () => {
     return(
