@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/header";
 import Hero from "./components/hero";
-import IMAGE_POPE from "./assets/images/pope-francis.png";
+import IMAGE_POPE from "./assets/images/pope-francis.jpg";
 
 const App = () => {
   return (
