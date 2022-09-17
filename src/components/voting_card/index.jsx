@@ -3,7 +3,7 @@ import Button from "../button";
 import VotingButton from "../voting_button";
 import { VotingCardComponent } from "./styles"
 
-const VotingCard = ({name, description, imageURL, category, upVotes, downVotes, datePosted}) => {
+const VotingCard = ({name, description, imageURL, category, positiveVotes, negativeVotes, lastUpdated}) => {
     return (
         <VotingCardComponent backgroundImage={imageURL}>
             <div className="inner_container">
@@ -13,7 +13,7 @@ const VotingCard = ({name, description, imageURL, category, upVotes, downVotes, 
                         <p>{description}</p>
                     </div>
                     <div className="voting_actions">
-                        <span>{getDatePosted(datePosted)} in {category}</span>
+                        <span>{getDatePosted(lastUpdated)} in {category}</span>
                         <div className="buttons">
                         <VotingButton type="up"/>
                         <VotingButton type="down"/>
