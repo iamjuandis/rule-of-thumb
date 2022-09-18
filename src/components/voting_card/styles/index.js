@@ -9,18 +9,20 @@ const VotingCardComponent = styled.div`
   .inner_container {
     background: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.0001) 0%,
-      #888888 19.79%,
+      rgba(0, 0, 0, 0) 5%,
+      #888888 25%,
       #666666 50%,
       rgba(51, 51, 51, 0.6) 71.88%
     );
-
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     .card_content {
       display: flex;
       flex-direction: row;
       .texts_container {
+        padding-left: 260px;
         h4,
         p {
           color: #ffffff;
@@ -35,9 +37,16 @@ const VotingCardComponent = styled.div`
           font-size: 18px;
           font-weight: 400;
           line-height: 21.6px;
+          padding-bottom: 8px;
         }
       }
       .voting_actions {
+        .meta {
+          color: #ffffff;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 18px;
+        }
         .buttons {
           display: flex;
           flex-direction: row;

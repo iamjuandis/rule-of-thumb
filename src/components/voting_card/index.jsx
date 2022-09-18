@@ -16,7 +16,7 @@ const VotingCard = ({name, description, imageURL, category, positiveVotes, negat
                         <p>{description}</p>
                     </div>
                     <div className="voting_actions">
-                        <span>{getDatePosted(lastUpdated)} in {category}</span>
+                        <span className="meta">{getDatePosted(lastUpdated)} in {category}</span>
                         <div className="buttons">
                         <VotingButton type="up"/>
                         <VotingButton type="down"/>
