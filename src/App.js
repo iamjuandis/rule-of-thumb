@@ -16,11 +16,11 @@ const App = () => {
         headline="Pope Francis?"
         paragraph="He’s talking tough on clergy sexual abuse, or is he just another pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)"
       />
-      <section className="content">
+      <section className="app_content">
         <div className="inner_content">
           <div className="content_headline">
             <h3>Previous Rulings</h3>
-            <select>
+            <select onChange={console.log("CAMBIO SELECT")}>
               <option>List</option>
               <option>Grid</option>
             </select>

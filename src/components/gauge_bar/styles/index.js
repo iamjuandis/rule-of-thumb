@@ -7,9 +7,16 @@ const GaugeBarComponent = styled.div`
 `;
 
 const GaugeSingleBar = styled.div`
+  align-items: center;
+  background-color: ${(props) =>
+    props.type === "up"
+      ? "rgba(60, 187, 180, 0.6)"
+      : "rgba(249, 173, 29, 0.6)"};
   display: flex;
   flex-direction: ${(props) => (props.type === "up" ? "row" : "row-reverse")};
+  gap: 9px;
   min-width: 120px;
+  padding: 11px 18px;
   width: ${(props) => props.percentage};
   img {
     height: 22.5px;
