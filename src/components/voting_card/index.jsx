@@ -10,6 +10,7 @@ const VotingCard = ({name, description, imageURL, category, positiveVotes, negat
         <VotingCardComponent backgroundImage={imageURL}>
             <div className="inner_container">
                 <div className="card_content">
+                    <VotingButton type={positiveVotes >= negativeVotes? 'up' : 'down'} />
                     <div className="texts_container">
                         <h4>{name}</h4>
                         <p>{description}</p>
