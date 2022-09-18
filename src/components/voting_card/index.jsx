@@ -1,7 +1,9 @@
 import getDatePosted from "../../utils/getDatePosted";
 import Button from "../button";
 import VotingButton from "../voting_button";
+import GaugeBar from "../gauge_bar";
 import { VotingCardComponent } from "./styles"
+import getPercentages from "../../utils/getPercentages";
 
 const VotingCard = ({name, description, imageURL, category, positiveVotes, negativeVotes, lastUpdated}) => {
     return (
@@ -22,7 +24,7 @@ const VotingCard = ({name, description, imageURL, category, positiveVotes, negat
                         
                     </div>
                 </div>
-                {/* !TODO Gauge Bar Component */}
+                <GaugeBar percentages={getPercentages(positiveVotes, negativeVotes)}/>
             </div>
         </VotingCardComponent>
     )
