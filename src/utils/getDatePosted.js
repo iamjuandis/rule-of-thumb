@@ -5,9 +5,13 @@ const getDatePosted = (date) => {
     case difference < 30:
       return `${difference} days ago`;
     case difference > 30 && difference < 365:
-      return `${difference / 30} months ago`;
+      return `${Math.floor(difference / 30)} ${
+        Math.floor(difference / 30) === 1 ? "month" : "months"
+      } ago`;
     case difference > 365:
-      return `${difference / 356} years ago`;
+      return `${Math.floor(difference / 356)} ${
+        Math.floor(difference / 356) === 1 ? "year" : "years"
+      } ago`;
     default:
       return "0 days";
   }
